@@ -1,0 +1,117 @@
+*{
+margin:0%;
+ padding:0%;
+ box-sizing:border-box;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+height:100%;
+width:100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   background-color: rgb(117, 180, 191);
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+#lnav{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+   
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr i{
+    color: royalblue;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: bisque;
+}
+#rtop{
+    height: 50%;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+}
+#rbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+
+}
+#rtopleft{
+    height: 100%;
+    width: 55%;
+    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+
+}
+#rtopright{
+    height: 100%;
+    width: 45%;
+   background-image: url(https://plus.unsplash.com/premium_photo-1675667381451-be2fc08a122e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww);
+   background-size: cover;
+   background-position: center;
+   
+}
+#textcenter{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size:90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity:.6;
+    font-size: 20px;
+    line-height: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    opacity:.6 ;
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+     #left{
+        width:100%;
+    }
+    #main #right{
+        width:100%;
+    }
+}
